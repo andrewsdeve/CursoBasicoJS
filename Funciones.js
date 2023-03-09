@@ -67,3 +67,34 @@ var operacion = function(a,b){
 var resultado = operacion (10,45);
 console.log(resultado);
 
+/* Funcion Declarativa y Expresiva
+
+Funciones Declarativas: Utilizamos la palabra reservada function al inicio para poder declara la funcion:
+
+Ejemplo:
+
+
+*/
+
+
+function saludar(nombre){
+    console.log(`Hola ${nombre}`);
+}
+saludar('Ruth')
+
+/* Expresion de funcion: la expresion de funcion la declaracion se inicia con la palabra reservada var donse de generara la variable que guardara la fucnion ejemplo: */
+
+var nombre = function(nombre){
+    console.log(`Hola ${nombre}`);
+}
+nombre('Nancy');
+
+/* en la declaracionn de funcion la funcion podria no llevar el nombre,m aunque es mas comun que se hagan anonomas 
+
+Diferencias:
+
+a las funciones declarativas se les aplica hoisting y  la expresion de funcion no y aque el hoisting solo se aplica en las palabras reservadas var y function, lo que quiere decir que con las funciones declarativas podemos mandar llamar la funcion antes de que esta sea declarada y con la expresion de funcion no tenriamos que declararla primero y despues mandarla a llamar
+
+
+
+*/
